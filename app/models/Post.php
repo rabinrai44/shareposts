@@ -7,7 +7,8 @@
         }
 
         public function getPosts(){
-            // Joining the table between posts table and users table because posts has associated with some users
+            // Joining the table between posts table and users table 
+            // because posts has associated with some users
             $this->db->query('SELECT *,
                         posts.id as postId,
                         users.id as userId,
