@@ -24,3 +24,17 @@
             }
         }
     }
+
+    /**
+     * Check for the user ID when loggedin
+     * is return true
+     * else return false
+     */
+    function isLoggedIn(){
+        if(isset($_SESSION['user_id'])){
+            return true;
+        } else{
+            return false;
+        }
+    }
+    
